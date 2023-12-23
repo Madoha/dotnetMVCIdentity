@@ -33,13 +33,13 @@ builder.Services.Configure<IdentityOptions>(options =>
 builder.Services.AddAuthentication()
     .AddFacebook(options =>
     {
-        options.AppId = "1403970347207170";
-        options.AppSecret = "139756ad201dde71ce2691b4d7d1a98a";
+        options.AppId = "";
+        options.AppSecret = "";
     })
     .AddGoogle(options =>
     {
-        options.ClientId = "1087231995409-5jmn0lvov41ejecgtvqjik4js96v4t6e.apps.googleusercontent.com";
-        options.ClientSecret = "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";
+        options.ClientId = "";
+        options.ClientSecret = "";
     });
 
 var app = builder.Build();
